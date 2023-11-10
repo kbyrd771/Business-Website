@@ -48,7 +48,7 @@ ul li a{
 ul li a:hover{
     background-color: #fff;
     color: #000;
-    font-size: 20px;
+    font-size: 18.5px;
     border-radius: 6px;
     text-decoration: underline;
     text-decoration-color: rgb(29, 29, 29);
@@ -59,14 +59,20 @@ ul li a:hover{
 }
 
 footer{
+    display: flex;
+    justify-content: space-evenly;
     background-color: rgb(29, 29, 29);
     text-align: center;
-
+    height: 60px;
 }
 
-footer ul{
-    width: 120px;
-    margin: 7px;
-    padding: 17px;
+footer p{
     font-family: Roboto;
+    color: white;
+    margin-top: 19px;
+}
+
+footer p a{
+    text-decoration: underline;
+    color: white;
 }
