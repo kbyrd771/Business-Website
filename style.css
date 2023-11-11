@@ -24,20 +24,20 @@ nav{
     text-align: center;
 }
 
-ul{
+nav ul{
     display: inline-flex;
     list-style: none;
     color: #000;
 }
 
-ul li{
+nav ul li{
     width: 120px;
     margin: 7px;
     padding: 17px;
     font-family: Roboto;
 }
 
-ul li a{
+nav ul li a{
     text-decoration: none;
     font-size: 16px;
     color: #fff;
@@ -45,7 +45,7 @@ ul li a{
     transition: 0.4s;
 }
 
-ul li a:hover{
+nav ul li a:hover{
     background-color: #fff;
     color: #000;
     font-size: 18.5px;
@@ -54,8 +54,88 @@ ul li a:hover{
     text-decoration-color: rgb(29, 29, 29);
 }
 
-.content{
+fieldset{
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+}
+
+#submit{
+    position: relative;
+    top: 50px;
+}
+
+#message{
+    height: 50px;
+    font-size: 12px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px 10px;
+    width: fit-content;
+    grid-template-columns: [first] 1fr [line2];
+    grid-template-rows: [one] 1fr [two];
+    justify-items: center;
+    align-items: stretch;
+    position: relative;
+    left: 15%;
+    padding-top: 20px;
+}
+
+#item1{
+    display: flex;
+    justify-content: space-between;
+    grid-column: first;
+    grid-row: one;
+    height: 500px; width: 550px;
+}
+#item2{
+        grid-column: line2;
+        grid-row: two;
+        height: 500px; width: 550px;
+}
+#item3{
+
+        grid-column: first;
+        grid-row: two;
+        height: 500px; width: 550px;
+}
+#item4{
+        grid-column: line2;
+        grid-row: one;        
+        height: 500px; width: 550px;
+}
+
+.content, #content{
     flex: 1 0 auto;
+    text-align: center;
+}
+
+#content img{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    top: 70px;
+}
+
+#content h1{
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+}
+
+#content ul li{
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+}
+
+#content p{
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 footer{
